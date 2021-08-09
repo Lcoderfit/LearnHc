@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像标签</title>
+</head>
+
+<body>
+    <!-- img是一个单标签 -->
+    <!-- src是img的必须属性，指定图像文件路径 -->
+    <h4>图像标签的属性</h4>
+    <img src="./imgs/01.png" alt="">
+
+    <!-- 用img标签的alt属性来设置当图片显示不出来时用文字替换 -->
+    <h4>alt 替换文本 图像显示不出来时用文字替换</h4>
+    <img src="img2.jpg" alt="图片无法显示">
+
+    <!-- title属性，提示文本，鼠标放到图像上，提示的文字 -->
+    <!-- alt和title：一个是替换文本，一个是提示文本 -->
+    <img src="./imgs/01.png" alt="图片无法显示" title="山水图片">
+
+    <!-- width 设置图像的宽度 height设置图像高度-->
+    <!-- 如果只设置宽度或高度，则会将原图等比例缩放 -->
+    <h4>给图像设置宽度</h4>
+    <img src="./imgs/01.png" alt="图片无法显示" title="山水" width="500" />
+    <h4>给图像设置高度</h4>
+    <img src="./imgs/01.png" alt="图片无法显示" title="山水画" height="500">
+
+    <!-- 设定图像边框 -->
+    <h4>border 给图像设定边框</h4>
+    <img src="./imgs/01.png" alt="图片无法显示" title="山水画" width="500" border="15">
+</body>
+
+</html>
