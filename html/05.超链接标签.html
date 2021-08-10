@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 锚点链接: 当我门点击链接，可快速定位到页面中的位置 -->
+    <!-- href必须为#id id是要跳转到的标签的id -->
+    <a href="#place1">golang</a><br>
+    <a href="#place2">python</a><br>
+    <a href="#place3">MySQL</a><br>
+
+    <!-- anchor: 锚 -->
+    <!-- href：跳转目标url地址 target：目标窗口的弹出方式 -->
+    <!-- target: _self为默认值,表示在当前窗口打开 _blank为在新窗口中打开方式 -->
+    <!-- 外部链接 -->
+    <h4>1.外部链接</h4>
+    <a href="http://www.qq.com" target="_blank">腾讯</a>
+
+    <!-- 内部链接 -->
+    <h4>2.内部链接：网站内部页面之间的相互链接</h4>
+    <a href="./04.图像标签.html">公司简介</a>
+
+    <!-- 空链接,暂时没有确定的链接目标时使用 -->
+    <h4>3.空链接:#</h4>
+    <a href="#"></a>
+
+    <!-- 用于下载东西 -->
+    <h4>4.下载链接：地址链接的是文件</h4>
+    <a href="imgs.zip">下载文件</a>
+
+    <!-- 网页元素的链接,点击图片会跳转到目标 -->
+    <h4>5.网页元素的链接</h4>
+    <a href="http://www.baidu.com"><img src="./imgs/01.png" alt=""></a>
+
+    <h4 id="place1">golang</h4>
+    <p>kasdjfkasjdfkjaskdfja ksdjfkasjdfkajsdf
+    </p>
+    <h4 id="place2">python</h4>
+    <h4 id="place3">MySQL</h4>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 跨行合并(合并多行单元格)：rowspan="合并单元格的个数" -->
+    <!-- 跨列合并：clspan="合并单元格的个数" -->
+    <!-- 如果跨行，找到上面的单元格为目标单元格 -->
+    <!-- 如果跨列，找到左边单元格为目标单元格 -->
+    <table width="500" height="249" border="1" cellspacing="0">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
