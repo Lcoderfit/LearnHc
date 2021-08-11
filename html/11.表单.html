@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 表单用于收集输入信息 -->
+    <!-- 表单域(表单区域，把所有表单包含进去)，表单控件(也称为表单元素)和提示信息 -->
+    <!-- form标签定义表单域，action为数据要被提交到的网站，method是方法，name是数据名 -->
+    <!-- name规定后台接收数据时的字段名, value规定默认值 -->
+    <!-- checked规定input元素首次加载时应当被选中 -->
+    <!-- maxlength 规定输入字段中的字符最大长度 -->
+    <form action="lcoderfit" method="POST" name="name1">
+        <!-- input输入表单元素,input是一个但标签 -->
+        用户名：<input type="text" name="n1" id="" value="请输入用户名" maxlength="6"><br>
+        <!-- password 密码框，用户看不见密码 -->
+        密码: <input type="password" name="n2" id=""><br>
+
+        <!-- 单选框的多个选项的name必须相同 -->
+        <!-- 复选框中的多个选项name也必须相同 -->
+        <!-- 单选按钮 -->
+        性别：男<input type="radio" name="n3" id="" value="男" checked="checked"> 女<input type="radio" name="n3" id="">
+        <br>
+        <!-- 复选框 -->
+        爱好: 吃饭<input type="checkbox" name="n4" id=""> 睡觉<input type="checkbox" name="n4">
+        <br>
+
+        <!-- reset 重置表单域所有表单元素还原到初试状态 -->
+        <input type="reset" value="重置">
+
+        <!-- button 不会提交数据，多数情况下通过js进行其他操作 -->
+        <input type="button" name="" id="" value="获取短信">
+
+        <!-- 上传头像 -->
+        <input type="file" name="" id="" value="上传">
+
+        <!-- image定义图像形式的提交按钮 -->
+        <!-- hidden定义隐藏的输入字段 -->
+
+        <!-- submit 将表单域中的表单数据发送到服务器 -->
+        <input type="submit" name="n5" id="" value="免费注册">
+    </form>
+
+
+</body>
+
+</html>
