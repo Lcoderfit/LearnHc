@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体属性</title>
+    <!-- 使用font-family属性定义文本的字体系列 -->
+    <style>
+        /* 尽量使用系统默认字体 */
+        /* 谷歌浏览器默认文字大小为16px */
+        /* 不同浏览器的默认字号大小不一致，尽可能使用一个明确之大小 */
+        
+        body {
+            font-size: 16px;
+        }
+        /* 标题比较特殊，需要单独指定像素大小 */
+        
+        h2 {
+            /* 如果系统存在Arial字体，则选择，否则判断是否存在Microsoft Yahei,直到存在为止 */
+            font-family: Arial, "Microsoft Yahei", "微软雅黑";
+            font-size: 16px;
+        }
+        
+        .bold {
+            /* font-weight: 700 等效于bold */
+            /* 提倡用数字表示 */
+            /* font-weight: 400;  400 表示normal*/
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>pink的密码</h2>
+    <p class="bold">淡然，坦然</p>
+</body>
+
+</html>
