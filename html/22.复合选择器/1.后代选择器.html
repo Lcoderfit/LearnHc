@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 选择ol下的所有li标签,包括儿子和孙子等等后代 */
+        /* 后代选择器 */
+        
+        ol li {
+            color: pink;
+        }
+        
+        ol li a {
+            color: pink;
+        }
+        
+        .nav li a {
+            color: yellow;
+        }
+        /* 如果需要指定选择儿子，则用: > ,只选择儿子，不选孙子*/
+        /* 子元素选择器 */
+        
+        .nav>a {
+            color: red;
+        }
+        /* 并集选择器，通过逗号分割,同时选择元素1和元素2 */
+        /* 熊大，熊二改为粉色，小猪一家改为粉色 */
+        
+        div,
+        p,
+        .pig>li {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">fuck</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+    <!-- ul.nav>li{我是ul的孩子}*3 -->
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">fuck</a></li>
+    </ul>
+
+    <!-- div.nav>a{我是儿子}+p>a{我是孙子} -->
+    <div class="nav">
+        <a href="#">我是儿子</a>
+        <p><a href="#">我是孙子</a></p>
+    </div>
+
+    <!-- 并集选择器 -->
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+
+</body>
+
+</html>

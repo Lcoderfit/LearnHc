@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+    <!-- 文本颜色，对齐，缩进，行间距，修饰文本 -->
+    <style>
+        div {
+            /* color: green; */
+            /* color: #ff0000; */
+            /* red green blue */
+            color: rgb(255, 0, 0);
+            /* text-align: 用于设置元素内文本内容的对齐方式 */
+            /* left 左对齐  right：右对齐  center：居中对齐 */
+            text-align: center;
+            /* 装饰文本，添加上划线，下划线，装饰线等 */
+            /* 默认：none   underline：下划线   overline：上划线    line-through：删除线 */
+            /* 链接a自带下划线 */
+            text-decoration: underline;
+        }
+        
+        a {
+            /* 删除a标签自带的下划线 */
+            text-decoration: none;
+        }
+        
+        p {
+            /* 文本缩进，通常是段落首行缩进 */
+            /* 设置缩进2个字的距离：text-indent:2em */
+            text-indent: 20px;
+            /* 行间距, 由上间距，文本高度，下间距组成，
+            文本高度默认16px，如果设置行间距26px，则上下间距分别为5px */
+            line-height: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>绿色</div>
+    <a href="#">天照</a>
+    <p>今天是七夕节</p>
+</body>
+
+</html>

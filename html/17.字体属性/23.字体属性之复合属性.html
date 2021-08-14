@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css字体属性之复合属性</title>
+
+    <style>
+        /* 倾斜，加粗，正常大小，微软雅黑 */
+        
+        div {
+            /* font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: "Microsoft yahei"; */
+            /* 复合属性，按照 文字样式 粗细 大小/行高 字体系列 的顺序来定义  */
+            font: italic 700 16px "Microsoft yahei";
+            /* font: 16px "黑体" 不需要的设置可以不写，但必须设置 大小 字体系列 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>三生三世十里桃花</div>
+</body>
+
+</html>
