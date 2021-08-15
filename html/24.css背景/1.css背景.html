@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css背景属性</title>
+    <!-- 背景颜色，背景图片，背景平铺，背景图片位置，背景图像固定 -->
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* 设置背景透明, 默认情况下都是透明 */
+            background-color: transparent;
+        }
+        /* background-image: 描述了元素的背景图像，常见于logo或一些装饰性的小图片或超大的背景图片 */
+        /* 优点是非常便于控制位置,精灵图也是一种运用场景 */
+        
+        .d1 {
+            width: 300px;
+            height: 300px;
+            /* url是必须的，添加图片地址 */
+            background-image: url(../imgs/logo.png);
+            /* 背景平铺，background-repeat, 对背景图像进行平铺 */
+            /* 默认情况下是平铺的，no-repeat表示不平铺 */
+            /* 平铺：background-repeat: repeat; */
+            /* 沿x轴平铺: background-repeat: repeat-x; */
+            /* 沿y轴平铺: background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+            /* 改变图片在背景中的位置, 第一个是水平位置，第二个是垂直位置 */
+            /* left center right控制水平位置，top center  bottom*/
+            /* right center 和center right没区别，因为right只能控制水平位置 */
+            /* 如果只设定一个值，第二个值省略，则第二个值默认居中对齐 */
+            background-position: center top;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        hello world
+    </div>
+    <div class="d1">image</div>
+</body>
+
+</html>

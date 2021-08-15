@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式</title>
+    <!-- 块元素和行内元素 -->
+    <!-- 
+        块元素：h1-h6 p div ul ol li等等
+        1.独占一行
+        2.高度，宽度，外边距和内边距都可以控制
+        3.宽度默认是容器（父级宽度）的100%
+        4.是一个容器或盒子，里面可以放行内元素或块级元素
+        注意：文字类的元素中不能使用块级元素，p标签主要用于存放文字，里面不能放块级别元素
+        h1~h6也是文字类块级元素，里面不能放其他块元素
+
+        行内元素: a strong b em i del s ins u span; span是最典型的行内元素
+        1.一行可以显示多个行元素
+        2.高度和宽度不能直接设置
+        3.默认宽度是本身内容的宽度
+        4.行内元素只能放行内元素
+        注意：链接中不能再放链接, 
+
+        行内块元素：同时具有行内元素和块元素的特点
+        img input td
+        1.一行可以放多个,但是他们直接会有空白空隙
+        2.默认宽度就是它本身内容的宽度
+        3.高度，行高，外边距和内边距都可控
+     -->
+    <!-- 
+         元素显示模式转换，转换为块元素
+         display: block;
+                     
+        把行内元素转换为块级元素
+        display: inline;
+
+        转化为行内块
+        diaplay: inline-block;
+      -->
+    <style>
+        a {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            display: block;
+        }
+        
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: purple;
+            /* 把行内元素转换为块级元素 */
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="#">金星阿姨</a>
+    <a href="#">金星阿姨</a>
+    <div>我是块级元素</div>
+    <div>我是块级元素</div>
+</body>
+
+</html>

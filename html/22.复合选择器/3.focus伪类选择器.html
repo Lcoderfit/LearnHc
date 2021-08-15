@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus伪类选择器</title>
+    <!-- 
+        1.后代选择器 p a
+        2.子代选择器 p>a
+        3.并集选择器  p, a
+        4.链接伪类选择器    a:link a:visited a:hover a:active
+        5.:focus选择器  input:focus
+
+     -->
+    <!-- 把获得光标的input表单选取出来 -->
+    <style>
+        /* 选中哪个input，哪个input就变成黄色 */
+        
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" value="fuck">
+    <input type="text" value="fuck2">
+    <input type="text" valud="fuck3">
+</body>
+
+</html>
